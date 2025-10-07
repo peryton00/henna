@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Natural Henna Cone",
+    "description": "Premium black henna cone made from 100% natural ingredients. Perfect for beginners and professionals. Lasts 1-2 weeks on skin.",
+    "price": 5.99,
+    "image": "https://via.placeholder.com/300x200?text=Natural+Henna+Cone"
+  },
+  {
+    "id": "2",
+    "name": "Henna Paste Kit",
+    "description": "Complete kit with henna powder, essential oils, and applicator. Includes instructions for DIY mehndi at home. Skin-safe and chemical-free.",
+    "price": 12.99,
+    "image": "https://via.placeholder.com/300x200?text=Henna+Paste+Kit"
+  },
+  {
+    "id": "3",
+    "name": "Organic Henna Dye",
+    "description": "Ready-to-use organic henna dye in a tube. Rich brown color, easy application for temporary tattoos. Vegan and allergy-tested.",
+    "price": 8.5,
+    "image": "https://via.placeholder.com/300x200?text=Organic+Henna+Dye"
+  },
+  {
+    "id": "4",
+    "name": "Mehndi Design Stencils",
+    "description": "Set of 10 reusable stencils for intricate patterns. Ideal for bridal or festival designs. Made from durable plastic.",
+    "price": 15.0,
+    "image": "https://via.placeholder.com/300x200?text=Mehndi+Stencils"
+  },
+  {
+    "id": "5",
+    "name": "Natural Henna Cone",
+    "description": "Premium black henna cone made from 100% natural ingredients. Perfect for beginners and professionals. Lasts 1-2 weeks on skin.",
+    "price": 5.99,
+    "image": "https://via.placeholder.com/300x200?text=Natural+Henna+Cone"
+  },
+  {
+    "id": "6",
+    "name": "Henna Paste Kit",
+    "description": "Complete kit with henna powder, essential oils, and applicator. Includes instructions for DIY mehndi at home. Skin-safe and chemical-free.",
+    "price": 12.99,
+    "image": "https://via.placeholder.com/300x200?text=Henna+Paste+Kit"
+  },
+  {
+    "id": "7",
+    "name": "Organic Henna Dye",
+    "description": "Ready-to-use organic henna dye in a tube. Rich brown color, easy application for temporary tattoos. Vegan and allergy-tested.",
+    "price": 8.5,
+    "image": "https://via.placeholder.com/300x200?text=Organic+Henna+Dye"
+  },
+  {
+    "id": "8",
+    "name": "Mehndi Design Stencils",
+    "description": "Set of 10 reusable stencils for intricate patterns. Ideal for bridal or festival designs. Made from durable plastic.",
+    "price": 15.0,
+    "image": "https://via.placeholder.com/300x200?text=Mehndi+Stencils"
+  }
+]
