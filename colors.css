@@ -1,43 +1,48 @@
 /* Primary Theme: Warm henna-inspired tones (oranges, beiges) */
 
 :root {
-   /* Brand/Accent Colors (main buttons, headings, footer) */
-   --primary: #c68642;
-   /* Main orange-brown (buttons, h2 color, footer) */
-   --primary-light: #d4a574;
-   /* Lighter variant (header gradient, hovers) */
-   --primary-gradient: linear-gradient(to right, var(--primary-light), var(--primary));
-   /* Header background */
+  /* Brand/Accent Colors (main buttons, headings, footer) */
+  --primary: #c68642;
+  /* Main orange-brown (buttons, h2 color, footer) */
+  --primary-light: #d4a574;
+  /* Lighter variant (header gradient, hovers) */
+  --primary-gradient: linear-gradient(
+    to right,
+    var(--primary-light),
+    var(--primary)
+  );
+  /* Header background */
 
-   /* Background Colors */
-   --body-bg: #f9f5f0;
-   /* Light beige (body and sections) */
-   --card-bg: #ffffff;
-   /* White (product/artwork cards, forms) */
-   --hero-overlay: rgba(0, 0, 0, 0.7);
-   /* Dark overlay for hero text shadow */
+  /* Background Colors */
+  --body-bg: #f9f5f0;
+  /* Light beige (body and sections) */
+  --card-bg: #ffffff;
+  /* White (product/artwork cards, forms) */
+  --hero-overlay: rgba(0, 0, 0, 0.7);
+  /* Dark overlay for hero text shadow */
 
-   /* Text Colors */
-   --text-primary: #333333;
-   /* Dark gray (main body text) */
-   --text-secondary: #666666;
-   /* Medium gray (descriptions, secondary text) */
-   --text-light: #f0e6d2;
-   /* Light off-white (nav hover) */
+  /* Text Colors */
+  --text-primary: #333333;
+  /* Dark gray (main body text) */
+  --text-secondary: #666666;
+  /* Medium gray (descriptions, secondary text) */
+  --text-light: #f0e6d2;
+  /* Light off-white (nav hover) */
 
-   /* Interactive Colors */
-   --hover-light: var(--primary-light);
-   /* Hover states for buttons/nav */
-   --cancel: #95a5a6;
-   /* Gray (cancel buttons) */
-   --delete: #e74c3c;
-   /* Red (delete buttons) */
-   --delete-hover: #c0392b;
-   /* Darker red (delete hover) */
+  /* Interactive Colors */  
+  --hover-light: var(--primary-light);
+  /* Hover states for buttons/nav */
+  --cancel: #95a5a6;
+  /* Gray (cancel buttons) */
+  --delete: #e74c3c;
+  /* Red (delete buttons) */
+  --delete-hover: #c0392b;
+  /* Darker red (delete hover) */
+  --success: #43fa00;
 
-   /* Shadows and Borders (Optional - for subtle effects) */
-   --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
-   --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadows and Borders (Optional - for subtle effects) */
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Dark Mode Support (Optional - Uncomment if you want to add later) */
