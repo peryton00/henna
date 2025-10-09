@@ -46,8 +46,10 @@ function renderProducts() {
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
+                <div class="product-bt">
                 <p>Rs. ${product.price}/-</p>
                 <button class="add-to-cart" onclick="addToCart('${product.id}')">Add to Cart</button>
+                </div>
             </div>
         </div>
     `
@@ -97,7 +99,16 @@ function addToCart(productId) {
   }
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartCount();
-  alert(`${product.name} added to cart!`);
+  const cartUpdates = document.getElementById("cartUpdates");
+  cartUpdates.parentElement.style.display = "flex";
+  cartUpdates.classList.add("success-msg");
+  cartUpdates.innerHTML = `<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+</svg></span>${product.name} added to cart!`;
+  setTimeout(() => {
+    cartUpdates.parentElement.style.display = "none";
+  }, 3000);
 }
 
 function updateCartCount() {
@@ -133,7 +144,9 @@ function renderCart() {
                 <span>${item.quantity}</span>
                 <button onclick="updateQuantity('${item.id}', 1)">+</button>
             </div>
-            <p>Rs. ${(item.price * item.quantity).toFixed(2)}/-</p>
+            <p><strong>Total:</strong> Rs. ${(
+              item.price * item.quantity
+            ).toFixed(2)}/-</p>
             <button class="rm-btn" onclick="removeFromCart('${
               item.id
             }')"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
@@ -171,6 +184,16 @@ function removeFromCart(productId) {
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
   updateCartCount();
+  const cartUpdates = document.getElementById("cartUpdates");
+  cartUpdates.classList.add("removal-msg");
+  cartUpdates.parentElement.style.display = "flex";
+  cartUpdates.innerHTML = `<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-minus" viewBox="0 0 16 16">
+  <path d="M5.5 9a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+  <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+</svg></span> Item removed!`;
+  setTimeout(() => {
+    cartUpdates.parentElement.style.display = "none";
+  }, 3000);
 }
 
 function showCheckout() {

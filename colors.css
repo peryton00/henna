@@ -5,6 +5,8 @@
   --primary: #c68642;
   /* Main orange-brown (buttons, h2 color, footer) */
   --primary-light: #d4a574;
+  /* footer background */
+  --footer-bg: #16100b;
   /* Lighter variant (header gradient, hovers) */
   --primary-gradient: linear-gradient(
     to right,
@@ -29,7 +31,7 @@
   --text-light: #f0e6d2;
   /* Light off-white (nav hover) */
 
-  /* Interactive Colors */  
+  /* Interactive Colors */
   --hover-light: var(--primary-light);
   /* Hover states for buttons/nav */
   --cancel: #95a5a6;
@@ -38,7 +40,7 @@
   /* Red (delete buttons) */
   --delete-hover: #c0392b;
   /* Darker red (delete hover) */
-  --success: #43fa00;
+  --success: #42bb15;
 
   /* Shadows and Borders (Optional - for subtle effects) */
   --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
